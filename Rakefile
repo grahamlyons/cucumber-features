@@ -8,7 +8,7 @@ DIRS = ".bundle/ Gemfile.lock bin/ vendor/"
 task :default => :run
 
 task :install do
-    system('bundle install --no-cache --binstubs --path vendor/bundle')
+    system('bundle install --binstubs --path vendor/bundle')
 end
 
 task :run => [:install]  do
